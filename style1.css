@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #f9dffb, #e4c8f6, #d1b2ec);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    pointer-events: none;
+    padding: 20px;
+}
+
+.card>div {
+    margin-bottom: 5px;
+}
+
+.card1 img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.card2 img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.card3 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card4 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card5 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card6 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card7 img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.card8 img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.card9 img {
+    width: 150px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.card10 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card11 img {
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.card.dragging {
+    transform: none !important;
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 200vh;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideUp 1s ease-out forwards;
+    transition: none;
+    pointer-events: auto;
+}
+
+@keyframes slideUp {
+    to {
+        top: 85px;
+    }
+}
+
+.rotate-5 {
+    transform: rotate(5deg);
+}
+
+.rotate-10 {
+    transform: rotate(10deg);
+}
+
+.rotate--5 {
+    transform: rotate(-5deg);
+}
+
+.rotate--10 {
+    transform: rotate(-10deg);
+}
+
+.btn1,
+.btn2 {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    background-color: #bb4dd1;
+    z-index: 100;
+    opacity: 0;
+    animation: opacity 2s 6.5s ease-in-out forwards;
+}
+
+.btn1 {
+    left: 20px;
+}
+
+.btn2 {
+    right: 20px;
+}
+
+.text {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Satisfy", cursive;
+    font-size: 2.5rem;
+    color: #bb4dd1;
+    text-align: center;
+    padding: 0 20px;
+    opacity: 0;
+    animation: opacity 2s 6.5s ease-in-out forwards;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 160px;
+        height: 240px;
+        padding: 15px;
+    }
+
+    .card1 img {
+        width: 120px;
+        height: 180px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card2 img {
+        width: 120px;
+        height: 180px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card3 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card4 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card5 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card6 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card7 img {
+        width: 120px;
+        height: 180px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card8 img {
+        width: 120px;
+        height: 180px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card9 img {
+        width: 120px;
+        height: 180px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+
+    .card10 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card11 img {
+        width: 120px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .text {
+        font-size: 2rem;
+        bottom: 0;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 130px;
+        height: 200px;
+        padding: 12px;
+    }
+
+    .card1 img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card2 img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card3 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card4 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card5 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card6 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card7 img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card8 img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card9 img {
+        width: 100px;
+        height: 150px;
+        object-fit: contain;
+        object-position: center center;
+    }
+
+    .card10 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .card11 img {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        bottom: 20px;
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 6px 10px;
+    }
+}
